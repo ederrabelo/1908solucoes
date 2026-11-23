@@ -3,117 +3,141 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>1908 Soluções — Aplicativos e Políticas de Privacidade</title>
+  <title>1908 Soluções</title>
   <style>
     :root {
-      --primary: #5B5FEF;
-      --secondary: #8B5CF6;
-      --bg: #F8FAFF;
-      --card: #FFFFFF;
-      --text: #0F172A;
-      --muted: #475569;
-      --border: #E2E8F0;
+      --bg: #F7F7F8;
+      --surface: #FFFFFF;
+      --text: #18181B;
+      --muted: #52525B;
+      --border: #E4E4E7;
+      --btn-bg: #18181B;
+      --btn-hover: #27272A;
     }
-    * { box-sizing: border-box; }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       background: var(--bg);
       color: var(--text);
       line-height: 1.6;
-      padding: 36px 16px;
     }
+
     .container {
-      max-width: 760px;
+      width: 100%;
+      max-width: 720px;
       margin: 0 auto;
+      padding: 40px 16px 32px;
+      flex: 1;
     }
-    .hero {
-      background: linear-gradient(135deg, var(--primary), var(--secondary));
-      color: #FFFFFF;
-      border-radius: 22px;
-      padding: 32px 28px;
-      margin-bottom: 24px;
-      box-shadow: 0 12px 28px rgba(91, 95, 239, 0.22);
+
+    .header {
+      margin-bottom: 28px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid var(--border);
     }
-    .hero h1 {
-      margin: 0 0 8px;
-      font-size: 28px;
-      font-weight: 800;
+
+    .header h1 {
+      margin: 0 0 6px;
+      font-size: 26px;
+      font-weight: 700;
     }
-    .hero p {
+
+    .header p {
       margin: 0;
-      font-size: 15.5px;
-      opacity: 0.94;
+      font-size: 15px;
+      color: var(--muted);
     }
+
     .section-title {
-      font-size: 18px;
-      font-weight: 800;
-      margin: 0 0 14px;
+      margin: 0 0 12px;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
     }
+
     .app-card {
-      background: var(--card);
+      background: var(--surface);
       border: 1px solid var(--border);
-      border-radius: 18px;
-      padding: 22px;
+      border-radius: 12px;
+      padding: 20px;
       display: flex;
       flex-wrap: wrap;
       align-items: center;
       justify-content: space-between;
       gap: 16px;
-      box-shadow: 0 6px 20px rgba(15, 23, 42, 0.04);
     }
+
+    .app-info {
+      flex: 1 1 320px;
+    }
+
     .app-info h2 {
       margin: 0 0 4px;
-      font-size: 19px;
-      font-weight: 800;
+      font-size: 18px;
+      font-weight: 600;
     }
+
     .app-info p {
       margin: 0;
-      color: var(--muted);
       font-size: 14.5px;
+      color: var(--muted);
     }
+
     .btn {
       display: inline-block;
-      background: #EEF2FF;
-      color: var(--primary);
+      background: var(--btn-bg);
+      color: #FFFFFF;
       text-decoration: none;
-      font-weight: 700;
+      font-weight: 600;
       font-size: 14px;
-      padding: 10px 16px;
-      border-radius: 12px;
-      transition: background 0.15s ease;
+      padding: 9px 16px;
+      border-radius: 8px;
+      white-space: nowrap;
     }
+
     .btn:hover {
-      background: #E0E7FF;
+      background: var(--btn-hover);
     }
+
     .footer {
-      margin-top: 28px;
       text-align: center;
       color: var(--muted);
       font-size: 13.5px;
+      padding: 20px 16px 28px;
+      border-top: 1px solid var(--border);
+      background: var(--surface);
     }
   </style>
 </head>
 <body>
   <main class="container">
-    <section class="hero">
+    <header class="header">
       <h1>1908 Soluções</h1>
-      <p>Desenvolvimento de aplicativos móveis e ferramentas digitais com foco em qualidade, simplicidade e respeito à privacidade.</p>
-    </section>
+    </header>
 
-    <h2 class="section-title">Aplicativos e Políticas de Privacidade</h2>
+    <h2 class="section-title">Aplicativos</h2>
 
     <article class="app-card">
       <div class="app-info">
         <h2>Quiz da Bíblia</h2>
-        <p>Jogo de perguntas bíblicas 100% offline com 300 questões e modo de revisão.</p>
+        <p>Aplicativo de perguntas e respostas bíblicas com funcionamento 100% offline.</p>
       </div>
       <a class="btn" href="privacidade/quiz-da-biblia.html">Política de Privacidade</a>
     </article>
-
-    <footer class="footer">
-      © 2026 1908 Soluções • Todos os direitos reservados
-    </footer>
   </main>
+
+  <footer class="footer">
+    © 2026 · Todos os direitos reservados. · 1908 Soluções
+  </footer>
 </body>
 </html>
